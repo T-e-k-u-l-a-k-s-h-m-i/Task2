@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            background-color: #e9f5ff;
+            padding-bottom: 30px;
+            border-radius: 5px;
+            margin-left: 30px;
+            margin-right: 30px;
+            border:1px solid lightskyblue;
+            font-family: 'Times New Roman', Times, serif;
+         }
+        label{
+            font-weight: bold;
+            padding-left: 25px;
+            font-size: 25px;
+            }
+        input{
+    
+            padding-left: 20px;
+            margin-left: 25px;
+            height: 30px;
+            width: 1320px;
+            margin-right: 30px;
+            border-radius: 5px;
+            border: 1px solid gray;
+           } 
+select{
+    width: 1350px;
+    height: 33px;
+    margin-left: 25px;
+    border-radius: 5px;
+}
+button{
+    border: 1px solid #ddd;
+    font-weight: bold;
+    margin-right: 20px;
+    text-align: center;
+    background-color: #007bff;
+    cursor: pointer;
+    width: 1350px;
+    height: 33px;
+    margin-left: 25px;
+    border-radius: 5px;
+    color: azure;
+    }
+button:hover{
+    color:hsl(0, 37%, 91%)
+}
+h1{
+    text-align: center;
+    font-size:35px;
+}
+.fluid{
+margin:20px;
+border-radius: 10px;
+background-color:white;
+padding-bottom:  30px;
+box-shadow: rgba(100,100,111,0.2) 0px 7px 29px 0px;
+
+
+
+}
+body{
+    font-family: Arial, Helvetica, sans-serif
+}
+h2{
+    text-align: center;
+    padding-top: 20px; 
+    font-size:30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.list{
+margin-top: 5px;
+background-color:#f6f3f0;
+margin-left: 20px;
+margin-right: 20px;
+border-radius: 10px;
+border: 1px solid #ddd;
+box-shadow: rgba(100,100,111,0.2) 0px 7px 29px 0px;
+font-family: 'Times New Roman', Times, serif;
+
+}
+.list li{
+    border-bottom: 1px solid #add;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-left: 0px;
+    
+    font-size: 20px;
+   
+
+}
+.list li a{
+    color: #007bff;
+}
+table,tr{
+    text-align: center;
+    width: 95%;
+    border-collapse: collapse;
+    border-radius: 10px;
+    
+margin-bottom: 20px;
+   
+   
+}
+th{
+    background-color: #007bff;
+    color: #e9f5ff;
+    font-family: 'Times New Roman', Times, serif;
+}
+table,th,td{
+    border: 1px solid #ddd;
+    padding: 10px;
+    font-size: 20px;
+ margin-left:  30px;
+ font-family: 'Times New Roman', Times, serif;
+}  
+
+    tr:nth-child(even) {
+            background-color: Lightskyblue;
+        }
+
+.details{
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin:20px 20px 20px 20px;
+    box-shadow: rgba(100,100,111,0.2) 0px 7px 29px 0px;
+}
+body{
+    background-color: whitesmoke;
+}
+.emptable{
+    border: 1px solid #ddd ;
+}
+iframe{
+    border-radius: 10px;
+    width: 97%;
+    margin-left: 20px;
+}
+.sect{
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding-bottom: 30px;
+    margin-left: 25px;
+    box-shadow: rgba(100,100,111,0.2) 0px 7px 29px 0px;
+    margin-right: 20px;
+}
+</style>
+</head>
+<body>
+        <div class="fluid">
+        <h2 style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Company Directory Portal</h2>
+    <form>
+       <h2>Employee Registration Form</h2>
+        <label for="fullname">Full Name:</label><br></br>
+        <input type="text" id="fullname" name="name" required><br></br>
+        <label for="email">Email:</label><br></br>
+        <input type="email" id="email" name="email" required><br></br>
+        <label for="department">Department:</label><br></br>
+        <select id="department" name="department" required>
+            <option values="IT">IT</option>
+            <option values="HR">HR</option>
+            <option values="Marketing">Marketing</option>
+            <option values="Sales">Sales</option></select><br></br>
+            <label for="employeeId">Employee ID:</label><br></br>
+            <input type="number" id="employeeId" name="employeeId" required><br></br>
+            <label for="profilePicture">Profile Picture URL:</label><br></br>
+            <input type="URL" id="profilePicture" name="profilePicture" required><br></br>
+            <button type="submit">Register Employee</button>
+    </form>
+</div>
+    <section>
+
+    <div class="list">
+    <h1>Employee List</h1>
+    <ol >
+        <li><a href="#">Smith - Smith@gmail.com</a></li>
+        <li><a href="#">Scott - Scott@gmail.com</a></li>
+            <li><a href="#">John Doe - JohnDoe@gmail.com</a></li>
+            
+           
+            <li><a href="#">James - James@gmail.com</a></li>
+
+    </ol>
+
+
+
+</div>
+    </section>
+    <section>
+<div class="details">
+    <table id="a"><h2>Employee Details</h2>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Employee ID</th>
+                <th>Department</th>
+                <th>Profile Picture</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Smith</td>
+                <td>7369</td>
+                <td>IT</td>
+                <td>
+                    <img src="ITs.jpg" alt="" width="100px" height="100px">
+                </td>
+            </tr>
+            <tr>
+                <td>Scott</td>
+                <td>7599</td>
+                <td>Sales</td>
+                <td><img src="sales.jpg" alt="" width="100px" height="100px"></td>
+            </tr>
+            <tr>
+                <td>John Doe</td>
+                <td>7798</td>
+                <td>HR</td>
+                <td><img src="HR.jpeg" alt="" width="100px" height="100px"></td>
+            </tr>
+           
+            
+           
+            <tr>
+                <td>James</td>
+                <td>7839</td>
+                <td>Marketing</td>
+                <td><img src="marketing.jpg" alt="" width="100px" height="100px"></td>
+            </tr>
+        </tbody>
+       
+    </table>
+</div>
+    </section>
+<section class="sect">
+<div class="company"><h2 style="text-align: center;">Company Location</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d452.11506941820574!2d78.38999!3d17.49803!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb91f3fdf6bde9%3A0x752db86a6ab3be2a!2sInnomatics%20Research%20Labs!5e1!3m2!1sen!2sin!4v1728008213806!5m2!1sen!2sin" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>"
+</div>
+</section>
+
+
+</body>
+</html>
